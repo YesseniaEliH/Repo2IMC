@@ -1,7 +1,3 @@
-/*document.getElementById('form1').onsubmit=function(e){
-  e.preventDefault();
-}*/
-
 function calculoIMC(){
   var nombre= document.getElementById('nombre').value;
   var peso=document.getElementById('peso').value;
