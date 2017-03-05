@@ -8,25 +8,25 @@
 </head>
 <body>
   <h1>Cálculo de IMC</h1>
-  <form action="">
+  <form name="form1" onsubmit="calculoIMC(); return false;">
         <div>
           <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre">
+          <input type="text" id="nombre" autofocus="autofocus" required>
         </div>
         <br>
         <div>
           <label for="peso">Peso en Kg:</label>
-          <input type="text" id="peso">
+          <input type="text" id="peso" required>
         </div>
         <br>
         <div>
           <label for="altura">Altura en m:</label>
-          <input type="text" id="altura">
+          <input type="text" id="altura" required>
         </div>
         <br>
-        <button type="button" onclick="calculoIMC()">Enviar</button>
+        <button type="submit">Calcular</button>
     </form>
-    <br> 
+    <br>
     <div id="resultado"></div>
 
     <script src="assets/js/main.js"></script>
